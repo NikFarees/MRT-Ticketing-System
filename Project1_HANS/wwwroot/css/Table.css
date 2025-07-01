@@ -1,0 +1,19 @@
+﻿table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust table width */
+    font-size: 15px; /* Reduce font size */
+    table-layout: fixed; /* Set table layout to fixed */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+th {
+    font-weight: bold;
+    background-color: lightgray;
+    height: 50px; /* Adjust row height */
+}

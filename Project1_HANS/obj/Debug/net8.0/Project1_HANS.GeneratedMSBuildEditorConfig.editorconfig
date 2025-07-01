@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Project1_HANS
+build_property.RootNamespace = Project1_HANS
+build_property.ProjectDir = C:\Users\nikfa\Desktop\UniKL\BSE\SEM 3\Advance Programming\AP Projects\Project1_HANS\Project1_HANS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\nikfa\Desktop\UniKL\BSE\SEM 3\Advance Programming\AP Projects\Project1_HANS\Project1_HANS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/FullReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXEZ1bGxSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/MRTSungaiBulohKajangLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXE1SVFN1bmdhaUJ1bG9oS2FqYW5nTGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/PurchaseTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXFB1cmNoYXNlVGlja2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/PurchaseTicketInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXFB1cmNoYXNlVGlja2V0SW52b2ljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/ProjectController1/SendMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdENvbnRyb2xsZXIxXFNlbmRNYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nikfa/Desktop/UniKL/BSE/SEM 3/Advance Programming/AP Projects/Project1_HANS/Project1_HANS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jeqg0qn3i0

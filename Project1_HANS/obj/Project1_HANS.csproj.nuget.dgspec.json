@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nikfa\\Desktop\\UniKL\\BSE\\SEM 3\\Advance Programming\\AP Projects\\Project1_HANS\\Project1_HANS\\Project1_HANS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nikfa\\Desktop\\UniKL\\BSE\\SEM 3\\Advance Programming\\AP Projects\\Project1_HANS\\Project1_HANS\\Project1_HANS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nikfa\\Desktop\\UniKL\\BSE\\SEM 3\\Advance Programming\\AP Projects\\Project1_HANS\\Project1_HANS\\Project1_HANS.csproj",
+        "projectName": "Project1_HANS",
+        "projectPath": "C:\\Users\\nikfa\\Desktop\\UniKL\\BSE\\SEM 3\\Advance Programming\\AP Projects\\Project1_HANS\\Project1_HANS\\Project1_HANS.csproj",
+        "packagesPath": "C:\\Users\\nikfa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nikfa\\Desktop\\UniKL\\BSE\\SEM 3\\Advance Programming\\AP Projects\\Project1_HANS\\Project1_HANS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nikfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

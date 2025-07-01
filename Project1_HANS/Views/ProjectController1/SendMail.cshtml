@@ -1,0 +1,10 @@
+﻿@model Project1_HANS.Models.MRTSungaiBulohModel
+
+<h3>Ticket Mailing</h3>
+<hr />
+<p>@ViewBag.Message</p>
+<br />
+<p><h5>Ticket Information</h5></p>
+<p>@Html.Raw(ViewBag.Body)</p>
+
+<button onclick="location.href='@Url.Action("Index")'" class="btn btn-primary">Ok</button>

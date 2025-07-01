@@ -1,0 +1,66 @@
+//            Create table              //
+
+CREATE TABLE [dbo].[MRTLineTicket] (
+    [TicketId]       CHAR (10)     NOT NULL,
+    [TicketDateTime] DATETIME      NOT NULL,
+    [PurchaserName]  VARCHAR (100) NOT NULL,
+    [PurchaserIC]    VARCHAR (12)  NOT NULL,
+    [PurchaserEmail] VARCHAR (100) NOT NULL,
+    [StartStation]   VARCHAR (100) NOT NULL,
+    [EndStation]     VARCHAR (100) NOT NULL,
+    [TicketType]     VARCHAR (50)  NOT NULL,
+    [Citizen]        INT           NULL,
+    [Student]        INT           NULL,
+    [SeniorCitizen]  INT           NULL,
+    [Disable]        INT           NULL,
+    [Amount]         FLOAT (53)    NOT NULL,
+    PRIMARY KEY CLUSTERED ([TicketId] ASC)
+);
+
+
+
+//            Sp insert            //
+
+CREATE PROCEDURE spInsertTicket
+@ticketId char(10),
+@ticketDateTime datetime,
+@purchaserName varchar(100),
+@purchaserIc varchar(12),
+@purchaserEmail varchar(100),
+@startStation varchar(100),
+@endStation varchar(100),
+@ticketType varchar(max),
+@citizen int,
+@student int,
+@seniorcitizen int,
+@disable bit,
+@amount float
+AS
+INSERT INTO MRTLineTicket VALUES
+(
+@ticketId, @ticketDateTime, @purchaserName, @purchaserIc, @purchaserEmail, @startStation, @endStation, @ticketType,
+@citizen, @student, @seniorcitizen, @disable, @Amount
+);
+
+
+
+//            Sp delete            //
+
+CREATE PROCEDURE spDeleteTicket
+@ticketId char(10)
+AS
+DELETE FROM MRTLineTicket WHERE TicketId=@ticketId;
+
+
+
+//            Sp update            //
+
+CREATE PROCEDURE spUpdateTicket
+@ticketId char(10),
+@purchaserName varchar(100),
+@purchaserIc varchar(12),
+@purchaserEmail varchar(100)
+AS
+UPDATE MRTLineTicket 
+SET PurchaserName=@purchaserName, PurchaserIC=@purchaserIc, PurchaserEmail=@purchaserEmail
+WHERE TicketId=@ticketId;

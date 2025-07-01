@@ -1,0 +1,37 @@
+﻿<html>
+    <head>
+        <title>Full Report</title>
+        <link href="~/css/invoice.css" rel="stylesheet" />
+    </head>
+    <body>
+        <button onclick="location.href='@Url.Action("Index")'" class="btn btn-primary">Back</button>
+        <br />
+        <br />
+
+        <h3>MRT Kajang Line Report</h3>
+        <hr />
+
+        <h5>Customer</h5>
+        <p><label>Citizen</label>  : @ViewBag.TotalCitizen</p>
+        <p><label>Student</label> : @ViewBag.TotalStudent</p>
+        <p><label>Senior Citizen</label> : @ViewBag.TotalSeniorCitizen </p>
+        <p><label>Disable</label>  : @ViewBag.TotalDisable</p>
+        <p><label>Total People</label> : @ViewBag.TotalPeople </p>
+        <br />
+
+        <h5>Ticket</h5>
+        <p><label>Total Ticket</label> : @ViewBag.TotalTicket</p>
+        <p><label>Total Amount Fare</label> : @ViewBag.TotalAmountFare.ToString("c2")</p>
+        <br />
+
+        <h5>Most Popular</h5>
+        <p><label>Start Station</label> : @ViewBag.MostPopularStartStation  </p>
+        <p><label>End Station</label> : @ViewBag.MostPopularEndStation  </p>
+        <br />
+
+        <h5>Least Popular</h5>
+        <p><label>Start Station</label> : @ViewBag.LeastPopularStartStation   </p>
+        <p><label>End station</label> : @ViewBag.LeastPopularEndStation   </p>
+        <br />
+    </body>
+</html>

@@ -1,0 +1,77 @@
+﻿@model Project1_HANS.Models.MRTSungaiBulohModel
+
+<head>
+	<title>Ticket Invoice</title>
+</head>
+<body>
+	<h3>Ticket Delete</h3>
+	<hr />
+	<p><h5>Ticket Information</h5></p>
+	<p>
+		<label>Ticket Id:</label>
+		@Html.DisplayFor(x => x.ViewId)
+	</p>
+	<p>
+		<label>Ticket Date Time:</label>
+		@Html.DisplayFor(x => x.ViewDateTime)
+	</p>
+	<p>
+		<label>Purchaser Name:</label>
+		@Html.DisplayFor(x => x.Name)
+	</p>
+	<p>
+		<label>Purchaser IC:</label>
+		@Html.DisplayFor(x => x.IC)
+	</p>
+	<p>
+		<label>Purchaser Email	:</label>
+		@Html.DisplayFor(x => x.Email)
+	</p>
+	<p>
+		<label>Start Station:</label>
+		@Html.DisplayFor(x => x.StartStation)
+	</p>
+	<p>
+		<label>End Station:</label>
+		@Html.DisplayFor(x => x.EndStation)
+	</p>
+	<p>
+		<label>Ticket Type:</label>
+		@Html.DisplayFor(x => x.TicketType)
+	</p>
+	<p>
+		<label>Citizen:</label>
+		@Html.DisplayFor(x => x.Citizen)
+	</p>
+	<p>
+		<label>Student:</label>
+		@Html.DisplayFor(x => x.Student)
+	</p>
+	<p>
+		<label>Senior Citizen:</label>
+		@Html.DisplayFor(x => x.SeniorCitizen)
+	</p>
+	<p>
+		<label>Disable:</label>
+		@Html.DisplayFor(x => x.Disable)
+	</p>
+	<p>
+		<label>Amount:</label>
+		@Html.DisplayFor(x => x.Amount)
+	</p>
+	<hr />
+	<h5>Are you sure you want to delete?</h5>
+	<br />
+	<div class="row">
+		<div class="col-md-1">
+			@using (Html.BeginForm())
+			{
+				<input type="submit" value="Yes" class="btn btn-danger" />
+			}
+		</div>
+		<div class="col-md-1">
+			<button onclick="location.href='@Url.Action("Index")'" class="btn btn-primary">No</button>
+		</div>
+	</div>
+
+</body>

@@ -1,0 +1,89 @@
+﻿@model Project1_HANS.Models.MRTSungaiBulohModel
+
+<head>
+    <title>Ticket Customer Invoice</title>
+    <link href="~/css/invoice.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h3>Ticket Invoice</h3>
+    <hr />
+    <h5>Customer Information</h5>
+    <p>
+        <label>Customer Name</label>
+        : @Html.DisplayFor(x => x.Name)
+    </p>
+    <p>
+        <label>Customer IC</label>
+        : @Html.DisplayFor(x => x.IC)
+    </p>
+    <p>
+        <label>Customer Email</label>
+        : @Html.DisplayFor(x => x.Email)
+    </p>
+    <br />
+
+    <h5>Ticket Information</h5>
+    <p>
+        <label>Ticket Id</label>
+        : @Html.DisplayFor(x => x.TicketId)
+    </p>
+    <p>
+        <label>Date & Time</label>
+        : @Html.DisplayFor(x => x.TicketDateTime)
+    </p>
+    <p>
+        <label>Start Station</label>
+        : @Html.DisplayFor(x => x.StartStation)
+    </p>
+    <p>
+        <label>End Station</label>
+        : @Html.DisplayFor(x => x.EndStation)
+    </p>
+    <p>
+        <label>Ticket Type</label>
+        : @Html.DisplayFor(x => x.TicketType)
+    </p>
+    @if (Model.Citizen > 0)
+    {
+        <p>
+            <label>Citizen</label>
+            : @Html.DisplayFor(x => x.Citizen)
+        </p>
+    }
+    @if (Model.Student > 0)
+    {
+        <p>
+            <label>Student</label>
+            : @Html.DisplayFor(x => x.Student)
+        </p>
+    }
+    @if (Model.SeniorCitizen > 0)
+    {
+        <p>
+            <label>Senior Citizen</label>
+            : @Html.DisplayFor(x => x.SeniorCitizen)
+        </p>
+    }
+    @if (Model.Disable > 0)
+    {
+        <p>
+            <label>Disable</label>
+            : @Html.DisplayFor(x => x.Disable)
+        </p>
+    }
+    <p>
+        <label>Total Ticket</label>
+        : @(Model.Citizen + Model.Student + Model.SeniorCitizen + Model.Disable)
+    </p>
+    <p>
+        <label>Total Fare</label>
+        : @Model.CalculateTotalFare().ToString("c")
+    </p>
+    <p>
+        <button onclick="location.href='@Url.Action("MRTSungaiBulohKajangLine")'" class="btn btn-primary">Ok</button>
+    </p>
+</body>
+
+
+   

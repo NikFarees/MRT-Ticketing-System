@@ -1,0 +1,26 @@
+﻿table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.tableHeader {
+    font-weight: bold;
+    background-color: lightgray;
+    height: 50px;
+}
+
+tr.tableData:hover {
+    background-color: #f5f5f5;
+}
+
+.table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

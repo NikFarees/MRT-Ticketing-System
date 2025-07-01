@@ -1,0 +1,95 @@
+﻿@model Project1_HANS.Models.MRTSungaiBulohModel
+
+<head>
+    <title>Purchase Ticket</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <button type="button" onclick="window.location.href='@Url.Action("MRTSungaiBulohKajangLine")'" class="btn btn-primary">Back</button>
+        <br /><br />
+
+        <h3>Ticket Purchase</h3>
+        <hr />
+
+        <h5>Customer Information</h5>
+        <div class="row">
+            <p class="col-md-4">
+                <label>@Html.DisplayNameFor(x => x.Name)</label>
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-4">
+                <label>@Html.DisplayNameFor(x => x.IC)</label>
+                @Html.TextBoxFor(x => x.IC, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.IC, "", new { @class = "text-danger" })
+            </p>        
+        </div>
+        <div class="row">
+            <p class="col-md-4">
+                <label>@Html.DisplayNameFor(x => x.Email)</label>
+                @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+            </p>
+        </div>
+        <br />
+
+        <h5>Ticket Information</h5>
+        <div class="row">
+            <p class="col-md-3">
+                <label>Start Station:</label>
+                @Html.DropDownListFor(x => x.StartStation,
+                    new SelectList(Model.Stations),
+                    "Choose an option:", new { @class = "form-control" }
+                )
+                @Html.ValidationMessageFor(x => x.StartStation, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-3">
+                <label>End Station:</label>
+                @Html.DropDownListFor(x => x.EndStation,
+                    new SelectList(Model.Stations),
+                    "Choose an option:", new { @class = "form-control" }
+                )
+                @Html.ValidationMessageFor(x => x.EndStation, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-2">
+                <label>Ticket Type:</label>
+                @Html.DropDownListFor(x => x.TicketType,
+                    new[] { 
+                        new SelectListItem() { Text = "Return Ticket", Value = "Return Ticket" },
+                        new SelectListItem() { Text = "One Way Ticket", Value = "One Way Ticket" }
+                    }, "Choose an option:", new { @class = "form-control" }
+                )
+                @Html.ValidationMessageFor(x => x.TicketType, "", new { @class = "text-danger" })
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-md-2">
+                <label>@Html.DisplayNameFor(x => x.Citizen)</label>
+                @Html.TextBoxFor(x => x.Citizen, new { @class = "form-control", type = "number", min = "0" })
+                @Html.ValidationMessageFor(x => x.Citizen, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-2">
+                <label>@Html.DisplayNameFor(x => x.Student)</label>
+                @Html.TextBoxFor(x => x.Student, new { @class = "form-control", type = "number", min = "0" })
+                @Html.ValidationMessageFor(x => x.Student, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-2">
+                <label>@Html.DisplayNameFor(x => x.SeniorCitizen)</label>
+                @Html.TextBoxFor(x => x.SeniorCitizen, new { @class = "form-control", type = "number", min = "0" })
+                @Html.ValidationMessageFor(x => x.SeniorCitizen, "", new { @class = "text-danger" })
+            </p>
+            <p class="col-md-2">
+                <label>@Html.DisplayNameFor(x => x.Disable)</label>
+                @Html.TextBoxFor(x => x.Disable, new { @class = "form-control", type = "number", min = "0" })
+                @Html.ValidationMessageFor(x => x.Disable, "", new { @class = "text-danger" })
+            </p>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <br />
+
+        <p>
+            <input type="submit" value="Submit" class="btn btn-primary" />
+        </p>
+    }
+</body>
